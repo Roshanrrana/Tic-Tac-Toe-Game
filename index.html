@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcomeScreen" class="welcome-screen">
+    <h1>Select Game Mode</h1>
+    <button onclick="selectMode(1)">1 Player (vs Computer)</button>
+    <button onclick="selectMode(2)">2 Player (vs Friend)</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="gameContainer" class="game-container" style="display: none;">
+    <h1 class="title">Tic Tac Toe</h1>
+    <p id="status">Your Turn (X)</p>
+    <div id="gameBoard" class="board"></div>
+    <button onclick="restartGame()">Restart 🔁</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

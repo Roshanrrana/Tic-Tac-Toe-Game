@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Both screens */
+.welcome-screen, .game-container {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 450px;
+}
+
+/* Headings */
+.welcome-screen h1, .title {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Buttons */
+.welcome-screen button,
+.game-container button {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.welcome-screen button:hover,
+.game-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Status text */
+#status {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Board
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(80px, 100px));
+  gap: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+} */
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  max-width: 90vw;
+}
+
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff20;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #ffffff40;
+  transform: scale(1.05);
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+@media (max-width: 600px) {
+  .board {
+    width: 250px;
+  }
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 2.2rem;
+  }
+}
+}
