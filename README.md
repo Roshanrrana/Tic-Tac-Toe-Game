@@ -26,10 +26,10 @@ The project focuses on front-end development, game logic, and responsive design 
 
 🛠️ Tech Stack:
 
-Technology	Usage
+Technology	Usage:
 
-HTML5	Game layout and structure
+HTML5 :	Game layout and structure
 
-CSS3	Styling, Flexbox/Grid, media queries
+CSS3 :	Styling, Flexbox/Grid, media queries
 
-JavaScript	Game logic, player moves, interactions
+JavaScript :	Game logic, player moves, interactions
