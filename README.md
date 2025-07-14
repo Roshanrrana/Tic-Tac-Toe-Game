@@ -4,6 +4,7 @@ This is a fully responsive and interactive Tic Tac Toe Game built using HTML, CS
 The project focuses on front-end development, game logic, and responsive design to ensure a consistent and engaging user experience across all devices.
 
 🚀 Features
+
 🤖 Single & Two Player Modes – Play against computer or with a friend
 
 📱 Responsive Design – Optimized for desktop, tablet, and mobile
