@@ -33,3 +33,9 @@ HTML5 :	Game layout and structure
 CSS3 :	Styling, Flexbox/Grid, media queries
 
 JavaScript :	Game logic, player moves, interactions
+
+---
+
+
+## 🔗 Live Demo
+[Click Here to View the Live Project](https://xokhel.netlify.app/)
